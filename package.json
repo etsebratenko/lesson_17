@@ -17,5 +17,18 @@
     "postcss-discard-comments": "^5.1.2",
     "sass": "^1.54.5",
     "sort-css-media-queries": "^2.0.4"
-  }
+  },
+  "description": "LTS версия https://nodejs.org/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etsebratenko/lesson_17.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/etsebratenko/lesson_17/issues"
+  },
+  "homepage": "https://github.com/etsebratenko/lesson_17#readme"
 }
