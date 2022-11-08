@@ -1,0 +1,31 @@
+@use "../presets" as * ;
+@use "../mixins" as *;
+
+.header {
+    &::after {
+      position: absolute;
+      left: 50%;
+  
+      width: 100%;
+      height: 1px;
+  
+      content: "";
+      transform: translateX(-50%);
+  
+      background-color: $color-gray;
+  }
+
+
+  &__menu {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__actions {
+    margin-left: auto;
+  }
+}
