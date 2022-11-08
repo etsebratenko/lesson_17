@@ -1,8 +1,42 @@
+@use "../presets" as *;
+@use "../mixins" as *;
 
 .container {
-  max-width: 1280px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 20px;
-  padding-top: 20px;
+  width: min(100% - 40px, 1290px);
+
+  margin-inline: auto;
+}
+
+.btn {
+  color: $color-white;
+  border-width: 1px;
+  border-style: solid;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn--light {
+  color: $color-primary;
+  border-color: rgba($color-primary, 0.5);
+}
+.btn--accent {
+  border-color: $color-accent;
+  background-color: $color-accent;
+}
+
+.btn--sm {
+  @include lg-min {
+    min-width: 120px;
+    min-height: 45px;
+  }
+  @include lg {
+    min-width: 100px;
+    min-height: 40px;
+  }
+}
+
+.btn--md {
+  min-width: 160px;
+  min-height: 60px;
 }

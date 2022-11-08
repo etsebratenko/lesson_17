@@ -200,6 +200,24 @@ template
     display: none;
 }
 
+@font-face
+{
+    font-family: 'Graphik LCG';
+    font-weight: normal;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/GraphikLCG-Regular.woff2') format('woff2'), url('../fonts/GraphikLCG-Regular.woff') format('woff');
+}
+@font-face
+{
+    font-family: 'Graphik LCG';
+    font-weight: 600;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/GraphikLCG-Semibold.woff2') format('woff2'), url('../fonts/GraphikLCG-Semibold.woff') format('woff');
+}
 *,
 *::before,
 *::after
@@ -211,18 +229,74 @@ template
 html
 {
     font-size: 16px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 body
 {
+    font-family: 'Graphik LCG', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+a
+{
     text-decoration: none;
+
+    color: #000;
 }
 
 .container
 {
-    max-width: 1280px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 20px;
-    padding-left: 20px;
+    width: min(100% - 40px, 1290px);
+
+    margin-inline: auto;
+}
+
+.btn
+{
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.btn--light
+{
+    color: #000;
+    border-color: rgba(0, 0, 0, .5);
+}
+
+.btn--accent
+{
+    border-color: #ff6336;
+    background-color: #ff6336;
+}
+
+.btn--md
+{
+    min-width: 160px;
+    min-height: 60px;
+}
+
+@media (min-width: 992px)
+{
+    .btn--sm
+    {
+        min-width: 120px;
+        min-height: 45px;
+    }
+}
+
+@media (max-width: 991.8px)
+{
+    .btn--sm
+    {
+        min-width: 100px;
+        min-height: 40px;
+    }
 }
