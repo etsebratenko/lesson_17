@@ -7,9 +7,9 @@
   }
 
   &__list {
-    display: flex;flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-
     column-gap: 25px;
 
     @include unlist;
@@ -26,10 +26,9 @@
 
 .header-navbar__btn {
   position: relative;
-
   width: 40px;
   height: 30px;
-
+  
   cursor: pointer;
 
   @include xl-min {
