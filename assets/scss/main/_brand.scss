@@ -1,0 +1,51 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.brand {
+  background-color: $color-brand;
+  padding: 100px 0;
+
+  @include xl-min {
+    padding: 100px;
+  }
+
+  @include xl-lg {
+    padding: 80px;
+  }
+
+  @include lg {
+    padding: 70px;
+  }
+
+  &__title {
+    margin: 0 auto 70px;
+    max-width: 720px;
+
+  }
+
+  &__list {
+    display: grid;
+    align-items: center;
+    gap: $gap-lg $gap;
+
+    @include xl-min {
+      grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+      justify-content: space-between;
+    }
+  
+    @include xl-lg {
+      grid-template-columns: repeat(3, minmax(50px, max-content));
+      justify-content: space-evenly;
+    }
+
+    @include lg-md {
+      grid-template-columns: repeat(2, minmax(50px, max-content));
+      justify-content: space-evenly;
+    }
+
+    @include md {
+      justify-content: center;
+    }
+  
+}
+}
