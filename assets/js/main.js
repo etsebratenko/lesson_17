@@ -1,1 +1,6 @@
-console.log('2322Test');
+$(document).ready(() => {
+  $('.header-navbar__btn').on('click', function () {
+    $(this).toggleClass('active');
+    $('.header-navbar__list').toggleClass('active');
+  });
+});
