@@ -1,0 +1,130 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.copyright {
+  background-color: $color-light-gray;
+}
+
+.copyright-content {
+  display: grid;
+  justify-content: space-between;
+  padding: 48px 0 48px;
+
+  @include xl-min {
+    grid-template-columns: repeat(2, minmax(50px, max-content));
+    justify-content: space-between;
+  }
+
+  @include xl-lg {
+    grid-template-columns: repeat(2, minmax(50px, max-content));
+    justify-content: space-between;
+  }
+
+  @include lg-md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 30px;
+  justify-content: space-around;  
+}
+
+  @include md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 30px;
+    justify-content: space-around;  
+  }
+}
+
+.copyright-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @include lg {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 15px;
+    flex-direction: column;
+  }
+
+  @include md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 15px;
+    flex-direction: column;
+  }
+}
+.copyright-left__img {
+  margin: 0;
+
+}
+.copyright-left__description {
+  max-width: 330px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  margin: 0;
+
+  @include lg {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 15px;  
+    max-width: 500px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  @include md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 15px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+
+}
+.copyright-right {
+
+}
+.copyright-right__copyright {
+  max-width: 75px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  margin: 0;
+
+
+  @include lg {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 15px;  
+    max-width: 500px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  @include md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 15px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+}
+.copyright-right__text {
+  max-width: 110px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  margin: 0; 
+
+
+  @include lg {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 15px;  
+    max-width: 500px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  @include md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 15px;
+    text-align: center;
+    flex-direction: column;
+  }
+}
