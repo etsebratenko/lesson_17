@@ -794,6 +794,38 @@ h3
 
     text-decoration-line: underline;
 }
+
+.revolut
+{
+    padding: 80px 0 150px;
+
+    background-color: #c9e8f2;
+
+    gap: 85px;
+}
+
+.revolut__content
+{
+    display: grid;
+
+    gap: 30px;
+}
+.revolut-info__description
+{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3;
+
+    margin-bottom: 25px;
+}
+.revolut-info__caption
+{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.67;
+
+    margin-bottom: 10px;
+}
 @media (min-width: 992px)
 {
     .btn--sm
@@ -871,6 +903,11 @@ h3
         grid-template-columns: repeat(3, minmax(50px, -webkit-max-content));
         grid-template-columns: repeat(3, minmax(50px, max-content));
     }
+    .revolut__content
+    {
+        grid-template-columns: repeat(2, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(2, minmax(50px, max-content));
+    }
 }
 @media (max-width: 1199.8px)
 {
@@ -934,6 +971,11 @@ h3
     {
         grid-template-columns: repeat(3, minmax(50px, -webkit-max-content));
         grid-template-columns: repeat(3, minmax(50px, max-content));
+    }
+    .revolut__content
+    {
+        grid-template-columns: repeat(2, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(2, minmax(50px, max-content));
     }
 }
 @media (max-width: 991.8px)
@@ -1020,6 +1062,15 @@ h3
         -ms-flex-pack: center;
         justify-content: center;
     }
+    .revolut-info
+    {
+        max-width: 550px;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        justify-items: center;
+    }
 }
 @media (max-width: 991.8px) and (min-width: 768px)
 {
@@ -1048,6 +1099,22 @@ h3
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+    }
+    .revolut__content
+    {
+        grid-template-columns: repeat(1, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(1, minmax(50px, max-content));
+        row-gap: 50px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .revolut-info__picture
+    {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        justify-items: baseline;
     }
 }
 @media (max-width: 767.8px)
@@ -1083,6 +1150,22 @@ h3
         justify-content: center;
     }
     .boots-card
+    {
+        max-width: 330px;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .revolut__content
+    {
+        grid-template-columns: repeat(1, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(1, minmax(50px, max-content));
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .revolut-info
     {
         max-width: 330px;
 

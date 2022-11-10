@@ -1,0 +1,70 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.revolut {
+  background-color: $color-blue;
+  padding: 80px 0 150px;
+  gap: 85px;
+}
+.revolut__content {
+  display: grid;
+  gap: 30px;
+
+  @include xl-min {
+    grid-template-columns: repeat(2, minmax(50px, max-content));
+  }
+
+  @include xl-lg {
+    grid-template-columns: repeat(2, minmax(50px, max-content));
+
+  }
+
+  @include lg-md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 50px;
+    justify-content: center;
+  }
+
+  @include md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    justify-content: center;
+  }
+}
+.revolut-info {
+
+  @include lg{
+    max-width: 550px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  @include md {
+    max-width: 330px;
+    align-items: center;
+
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  &__caption {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.67;
+    margin-bottom: 10px;
+  }
+  &__picture {
+    
+    @include lg-md {
+      align-items: center;
+      justify-items: baseline;
+    }
+
+  }
+  &__img {
+  }
+}
