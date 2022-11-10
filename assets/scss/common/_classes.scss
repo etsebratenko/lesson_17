@@ -28,6 +28,11 @@
   background-color: $color-accent;
 }
 
+.btn--primary {
+  color: $color-white;
+  background-color: $color-primary;
+}
+
 .btn--sm {
   @include lg-min {
     min-width: 120px;
