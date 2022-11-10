@@ -14,11 +14,14 @@
 
   font-size: 1rem;
   font-weight: 600;
+
+
 }
 
 .btn--light {
   color: $color-primary;
   border-color: rgba($color-primary, 0.5);
+  
 }
 .btn--accent {
   border-color: $color-accent;
