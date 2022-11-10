@@ -4,6 +4,7 @@
 .brand {
   background-color: $color-brand;
   padding: 100px 0;
+  margin-bottom: 100px;
 
   @include xl-min {
     padding: 100px;
@@ -46,6 +47,7 @@
     @include md {
       justify-content: center;
     }
+
   
 }
 }

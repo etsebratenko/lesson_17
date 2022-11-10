@@ -1,0 +1,101 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+
+.control,
+.quality {
+  @extend %job-control;
+
+  &__content {
+    @extend %job-content-left;
+  }
+
+  &__title {
+    @extend %job-title;
+    }
+
+  &__description {
+    @extend %job-description;
+  }
+  
+  &__btn {
+    @extend %job-btn;
+  }
+
+  &__picture {
+    @extend %lob-picture;
+    @include lg {
+      width: 100%;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+}
+
+.time,
+.work {
+  @extend %job-control;
+  flex-direction: row-reverse;
+
+  &__content {
+    @extend %job-content-right;
+  }
+  &__title {
+    @extend %job-title;
+    }
+  &__description {
+    @extend %job-description;
+  }
+  
+  &__btn {
+    @extend %job-btn;
+  }
+
+  &__picture {
+    @extend %lob-picture;
+    @include lg {
+      width: 100%;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+}
+
+%job-control {
+  display: flex;
+  gap: $gap-lg;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-items: center;
+
+  @include lg {
+    flex-direction: column;
+  }
+}
+
+%job-content-left {
+  flex-basis: 200px;
+  flex-grow: 1;
+  @include xl-min {
+    padding-right: 100px;
+  }
+  @include lg {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  
+}
+
+%job-content-right {
+  flex-basis: 200px;
+  flex-grow: 1;
+  @include xl-min {
+    padding-right: 100px;
+  }
+  @include lg {
+    flex-direction: column;
+    padding-left: 0;
+  }
+}
