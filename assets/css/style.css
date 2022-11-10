@@ -826,6 +826,59 @@ h3
 
     margin-bottom: 10px;
 }
+.cake
+{
+    padding: 117px 0 118px;
+
+    background-color: #dabc98;
+}
+
+.cake__content
+{
+    display: grid;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cake-info
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    gap: 67px;
+}
+
+.cake-info__description
+{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    max-width: 460px;
+    padding-right: 20px;
+}
+
+.cake-picture
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding-left: 71px;
+
+    border-left: solid 2px #000;
+
+    gap: 70px;
+}
+
+.cake-picture__img
+{
+    max-width: 150px;
+}
+
 @media (min-width: 992px)
 {
     .btn--sm
@@ -838,6 +891,7 @@ h3
         max-width: 470px;
     }
 }
+
 @media (min-width: 1200px)
 {
     h2
@@ -908,7 +962,24 @@ h3
         grid-template-columns: repeat(2, minmax(50px, -webkit-max-content));
         grid-template-columns: repeat(2, minmax(50px, max-content));
     }
+    .cake__content
+    {
+        grid-template-columns: repeat(2, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(2, minmax(50px, max-content));
+    }
+    .cake-info
+    {
+        grid-template-columns: repeat(2, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(2, minmax(50px, max-content));
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 }
+
 @media (max-width: 1199.8px)
 {
     .header__actions
@@ -934,6 +1005,7 @@ h3
         font-size: 20px;
     }
 }
+
 @media (max-width: 1199.8px) and (min-width: 992px)
 {
     h2
@@ -977,7 +1049,24 @@ h3
         grid-template-columns: repeat(2, minmax(50px, -webkit-max-content));
         grid-template-columns: repeat(2, minmax(50px, max-content));
     }
+    .cake__content
+    {
+        grid-template-columns: repeat(2, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(2, minmax(50px, max-content));
+    }
+    .cake-info
+    {
+        grid-template-columns: repeat(2, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(2, minmax(50px, max-content));
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 }
+
 @media (max-width: 991.8px)
 {
     h2
@@ -1071,7 +1160,24 @@ h3
         align-items: center;
         justify-items: center;
     }
+    .cake-info
+    {
+        padding-bottom: 30px;
+
+        grid-template-columns: repeat(1, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(1, minmax(50px, max-content));
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        gap: 30px;
+    }
 }
+
 @media (max-width: 991.8px) and (min-width: 768px)
 {
     .hero__image
@@ -1116,7 +1222,58 @@ h3
         align-items: center;
         justify-items: baseline;
     }
+    .cake__content
+    {
+        grid-template-columns: repeat(1, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(1, minmax(50px, max-content));
+        row-gap: 50px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .cake-info__img
+    {
+        grid-template-columns: repeat(1, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(1, minmax(50px, max-content));
+        row-gap: 50px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .cake-info__description
+    {
+        text-align: center;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .cake-picture
+    {
+        padding-left: 0;
+
+        border-left: none;
+
+        grid-template-columns: repeat(1, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(1, minmax(50px, max-content));
+        row-gap: 50px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
 }
+
 @media (max-width: 767.8px)
 {
     .hero__image
@@ -1173,7 +1330,71 @@ h3
         -ms-flex-align: center;
         align-items: center;
     }
+    .cake__content
+    {
+        grid-template-columns: repeat(1, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(1, minmax(50px, max-content));
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .cake-info
+    {
+        padding-bottom: 30px;
+
+        grid-template-columns: repeat(1, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(1, minmax(50px, max-content));
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        gap: 30px;
+    }
+    .cake-info__img
+    {
+        grid-template-columns: repeat(1, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(1, minmax(50px, max-content));
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .cake-info__description
+    {
+        text-align: center;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .cake-picture
+    {
+        padding-left: 0;
+
+        border-left: none;
+
+        grid-template-columns: repeat(1, minmax(50px, -webkit-max-content));
+        grid-template-columns: repeat(1, minmax(50px, max-content));
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
 }
+
 @media (max-width: 575.8px)
 {
     .header__menu
@@ -1185,6 +1406,7 @@ h3
         -ms-flex-direction: column;
     }
 }
+
 @media (max-width: 419.8px)
 {
     .hero__actions

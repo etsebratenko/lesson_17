@@ -1,0 +1,135 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.cake {
+  background-color: $color-cake;
+  padding: 117px 0 118px;
+}
+
+.cake__content {
+  display: grid;
+  align-items: center;
+
+  @include xl-min {
+    grid-template-columns: repeat(2, minmax(50px, max-content));
+  }
+
+  @include xl-lg {
+    grid-template-columns: repeat(2, minmax(50px, max-content));
+
+  }
+
+  @include lg-md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 50px;
+    justify-content: center;
+  }
+
+  @include md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    justify-content: center;
+  }
+
+
+}
+.cake-info {
+  display: flex;
+  gap: 67px;
+
+  @include xl-min {
+    grid-template-columns: repeat(2, minmax(50px, max-content));
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include xl-lg {
+    grid-template-columns: repeat(2, minmax(50px, max-content));
+    justify-content: center;
+    align-items: center;
+  }
+  @include lg {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+
+  @include md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+}
+.cake-info__img {
+
+  @include lg-md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  @include md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+.cake-info__description {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1.4;
+  padding-right: 20px;
+  max-width: 460px;
+
+  @include lg-md {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+  }
+
+  @include md {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+.cake-picture {
+  border-left: solid 2px $color-primary;
+  padding-left: 71px;
+  display: flex;
+  gap: 70px;
+
+  @include lg-md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    border-left: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+  }
+
+  @include md {
+    grid-template-columns: repeat(1, minmax(50px, max-content));
+    justify-content: center;
+    align-items: center;
+    border-left: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+  }
+}
+
+.cake-picture__img{
+  max-width: 150px;
+}
