@@ -1,19 +1,19 @@
 @use "../presets" as *;
 @use "../mixins" as *;
 
-.bird {
+.integrations {
   background-color: $color-white;
   padding: 169px 0 200px;
 
 }
 
-.bird__content {
+.integrations__content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.bird__title {
+.integrations__title {
   font-weight: 600;
   font-size: 65px;
   line-height: 1.15;
@@ -36,7 +36,7 @@
 
   }
 }
-.bird__description {
+.integrations__description {
   font-weight: 400;
   font-size: 25px;
   line-height: 1.2;
@@ -46,7 +46,7 @@
   padding-bottom: 25px;
 }
 
-.bird__img {
+.integrations__img {
   padding-bottom: 35px;  
 
     @include xl-min {

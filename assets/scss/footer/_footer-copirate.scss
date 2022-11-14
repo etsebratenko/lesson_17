@@ -23,8 +23,8 @@
   @include lg-md {
     grid-template-columns: repeat(1, minmax(50px, max-content));
     row-gap: 30px;
-  justify-content: space-around;  
-}
+  justify-content: space-around;
+  }
 
   @include md {
     grid-template-columns: repeat(1, minmax(50px, max-content));
@@ -75,12 +75,8 @@
     text-align: center;
     flex-direction: column;
   }
-
-
 }
-.copyright-right {
 
-}
 .copyright-right__copyright {
   max-width: 75px;
   font-weight: 400;

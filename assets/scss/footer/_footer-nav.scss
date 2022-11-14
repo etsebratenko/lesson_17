@@ -7,10 +7,10 @@
 .footer-categories__content {
   display: grid;
   grid-template-columns: repeat(2, minmax(50px, max-content));
-  padding: 48px 0 48px;
+  padding: 48px 0 0;
   border-bottom: solid 2px $color-primary;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: center;
 
   @include xl {
     grid-template-columns: repeat(2, minmax(50px, max-content));
@@ -24,7 +24,6 @@
   }
 }
   
-
 .categories-sport {
   display: flex;
   flex-direction: column;
@@ -63,6 +62,7 @@
     font-size: 20px;
     line-height: 1.5;
     padding-bottom: 15px;
+    margin: 0;
 
     @include lg {
       text-align: center;
@@ -83,6 +83,7 @@
 
 .categories-info {
   display: grid;
+  gap: 34px;
   grid-template-columns: repeat(4, minmax(50px, max-content));
 
 
@@ -95,35 +96,29 @@
     row-gap: 30px;
   }
 
-//   @include xl-min {
-//     grid-template-columns: repeat(4, minmax(50px, max-content));
-// }
-
-//   @include xl-lg {
-//     grid-template-columns: repeat(2, minmax(50px, max-content));
-//   }
-
-//   @include lg-md {
-//     grid-template-columns: repeat(2, minmax(50px, max-content));
-//   }
-
-//   @include md {
-//     grid-template-columns: repeat(1, minmax(50px, max-content));
-//   }
+  @include xl {
+    grid-template-columns: repeat(2, minmax(50px, max-content));
+    gap: 30px;
   
+  }
 }
+
 .categories {
   min-width: 187px;
 
   @include lg {
-    max-width: 150px;
+    min-width: 150px;
   }
   @include md {
-    max-width: 130px;
+    min-width: 130px;
   }
 
   @include xs {
-    max-width: 100px;
+    min-width: 130px;
+  }
+
+  @include xx {
+    min-width: 120px;
   }
 }
 .categories__title {
@@ -131,7 +126,6 @@
   font-size: 20px;
   line-height: 1.25;
   margin: 0;
-
 }
 
 .categories__link {
@@ -146,9 +140,7 @@
   gap: 15px;
   padding-left: 0;
 
-
-
-}
-.categories__item {
-
+  @include md {
+    max-width: 135px;
+  }
 }

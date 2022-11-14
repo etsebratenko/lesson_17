@@ -1,12 +1,12 @@
 @use "../presets" as *;
 @use "../mixins" as *;
 
-.cake {
+.management {
   background-color: $color-cake;
   padding: 117px 0 118px;
 }
 
-.cake__content {
+.management__content {
   display: grid;
   align-items: center;
 
@@ -32,7 +32,7 @@
 }
 
 
-.cake-info {
+.management-info {
   display: flex;
   gap: 67px;
 
@@ -65,7 +65,7 @@
     padding-bottom: 30px;
   }
 }
-.cake-info__img {
+.management-info__img {
 
   @include lg-md {
     grid-template-columns: repeat(1, minmax(50px, max-content));
@@ -82,7 +82,7 @@
   }
 
 }
-.cake-info__description {
+.management-info__description {
   font-weight: 600;
   font-size: 35px;
   line-height: 1.4;
@@ -104,7 +104,7 @@
   }
 
 }
-.cake-picture {
+.management-picture {
   border-left: solid 2px $color-primary;
   padding-left: 71px;
   display: flex;
@@ -130,6 +130,6 @@
   }
 }
 
-.cake-picture__img{
+.management-picture__img{
   max-width: 150px;
 }
