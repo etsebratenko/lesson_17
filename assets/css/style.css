@@ -538,8 +538,7 @@ a {
 .job {
   padding-bottom: 150px;
 }
-
-.job-container {
+.job__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1275,8 +1274,8 @@ a {
   .brand {
     padding: 70px;
   }
-  .job-container {
-    gap: 100px;
+  .job__container {
+    gap: 150px;
   }
   .control__picture,
   .quality__picture {

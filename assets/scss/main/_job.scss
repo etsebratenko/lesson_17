@@ -2,17 +2,21 @@
 @use "../mixins" as *;
 
 .job {
-padding-bottom: 150px;
-}
-.job-container {
+  padding-bottom: 150px;
+
+  &__container {
   display: flex;
   flex-direction: column;
   gap: 250px;
 
   @include lg {
-    gap: 100px;
+    gap: 150px;
+
   }
 }
+
+}
+
 .control,
 .quality {
   @extend %job-control;
