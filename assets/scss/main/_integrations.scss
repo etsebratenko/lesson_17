@@ -47,14 +47,13 @@
 }
 
 .integrations__img {
-  padding-bottom: 35px;  
+  padding-bottom: 35px;
 
     @include xl-min {
-      width: 100%;
-      margin-left: -70px;
+      width: 1023px;  
     }
     @include xl-lg {
-      width: 100%;
+      width: 1023px;  
     }
     @include lg-md {
       width: 80%;

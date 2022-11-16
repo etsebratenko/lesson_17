@@ -3,7 +3,7 @@
 
 .management {
   background-color: $color-cake;
-  padding: 117px 0 118px;
+  padding: 70px 0 84px;
 }
 
 .management__content {
@@ -87,6 +87,7 @@
   font-size: 35px;
   line-height: 1.4;
   padding-right: 20px;
+  margin: 0;
   max-width: 460px;
 
   @include lg-md {
